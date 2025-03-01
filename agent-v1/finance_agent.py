@@ -68,7 +68,7 @@ async def parse_pdf(pdf_url: str) -> str:
                     temp_file_path = temp_file.name
 
             parser = LlamaParse(
-                api_key="llx-9XpgmTKvNL1RyaU0nFIYD7vmYAT8BhQdQ0SsIhubyZwrFw26",
+                api_key="",
                 result_type="markdown"
             )
             parsed_content = await parser.aload_data(temp_file_path)
